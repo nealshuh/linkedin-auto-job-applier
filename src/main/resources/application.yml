@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: job-application-bot
+
+server:
+  port: 8080
+
+selenium:
+  config:
+    headless: true
+    chrome-options:
+      - "--no-sandbox"
+      - "--disable-dev-shm-usage"
+      - "--disable-gpu"
+      - "--window-size=1920,1080"
+
+api:
+  openai:
+    key: ${OPENAI_API_KEY}  # Set this as environment variable
+    model: gpt-4
+    max-tokens: 4000
+    temperature: 0.3
+    timeout: 60
+  claude:
+    key: ${CLAUDE_API_KEY}  # Set this as environment variable
+    model: claude-3-opus-20240229
+    max-tokens: 4000
+    temperature: 0.3
+
+applicant:
+  profile:
+    name: "Neal Shah"
+    email: "nealmshah11@gmail.com"
+    location: "Cary, NC"
+    phone: "5104805592"
+    github: "github.com/nealshuh"
+    linkedin: "linkedin.com/in/nealmshah"
+    current-company: "Dell Technologies"
+    current-role: "AIOps Engineer"
+    experience-years: 2

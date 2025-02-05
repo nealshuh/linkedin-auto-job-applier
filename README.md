@@ -22,4 +22,4 @@ scp -i your-key.pem setup-ec2.sh ec2-user@your-ec2-ip:~/ && ssh -i your-key.pem 
 
 ## Demo
 
-![Demo](./demo.MOV)
+![Demo](./demo.gif)
